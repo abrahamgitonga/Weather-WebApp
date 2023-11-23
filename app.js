@@ -1,12 +1,16 @@
-require('dotenv').config();
+
 
 // Replace 'YOUR_API_KEY' with the API key you obtained from OpenWeatherMap
-const apiKey = process.env.WEATHER_API_KEY;
+
+const apiKey = '';
 const weatherInfo = document.getElementById('weather-info');
+
+
 
 function getWeather() {
     const cityInput = document.getElementById('city');
     const city = cityInput.value;
+    
 
     // Check if the city input is not empty
     if (city.trim() === '') {
@@ -21,6 +25,7 @@ function getWeather() {
             // Handle the response data
             const temperature = data.main.temp;
             const description = data.weather[0].description;
+            
 
             // Display the weather information
             weatherInfo.innerHTML = `<p>Temperature: ${temperature}°C</p><p>Description: ${description}</p>`;
