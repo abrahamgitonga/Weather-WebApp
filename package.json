@@ -1,0 +1,16 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "Feel Free to Contribute </br> This is a simple weather-Web app made possible using openweathermap API</br> able to get data from any part/city of the world. </br>",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "abraham",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "dot": "^1.1.3",
+    "dotenv": "^16.3.1",
+    "env": "^0.0.2"
+  }
+}
